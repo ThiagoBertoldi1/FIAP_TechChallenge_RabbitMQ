@@ -1,0 +1,11 @@
+[
+  {
+    "Name": "Novo Perfil",
+    "Projects": [
+      {
+        "Path": "Worker.Insert\\Queue.Insert.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]
