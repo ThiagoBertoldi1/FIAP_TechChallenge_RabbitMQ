@@ -14,7 +14,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\Worker.Insert\Queue.Domain\Queue.Domain.csproj" />
-    <ProjectReference Include="..\..\Worker.Insert\Queue.Repository\Queue.Repository.csproj" />
+    <ProjectReference Include="..\Queue.Domain\Queue.Domain.csproj" />
+    <ProjectReference Include="..\Queue.Repository\Queue.Repository.csproj" />
   </ItemGroup>
 </Project>
