@@ -1,0 +1,34 @@
+name: .NET CI/CD
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  pipeline:
+    name: Build & Test
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout código
+        uses: actions/checkout@v3
+      
+      - name: .NET Install
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: 9.0
+
+      - name: Restaurar dependências
+        run: dotnet restore Worker.Queue.sln
+
+      - name: Build da solução
+        run: dotnet build Worker.Queue.sln --configuration Release --no-restore
+
+      - name: Rodar testes
+        run: dotnet test Worker.Queue.sln --configuration Release --no-build
+        
+
