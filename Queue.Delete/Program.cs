@@ -1,6 +1,6 @@
 using Queue.Delete;
-using Queue.Delete.Interfaces;
 using Queue.Delete.Services;
+using Queue.Domain.Interfaces;
 using Queue.Repository.Interfaces;
 using Queue.Repository.Repositories;
 

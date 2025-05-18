@@ -1,4 +1,4 @@
-﻿namespace Queue.Insert.Interfaces;
+﻿namespace Queue.Domain.Interfaces;
 
 public interface IQueueService
 {

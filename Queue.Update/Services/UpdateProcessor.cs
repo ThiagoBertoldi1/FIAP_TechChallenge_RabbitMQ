@@ -1,7 +1,7 @@
 ﻿using Newtonsoft.Json;
 using Queue.Domain.Entities;
+using Queue.Domain.Interfaces;
 using Queue.Repository.Interfaces;
-using Queue.Update.Interfaces;
 
 namespace Queue.Update.Services;
 public class UpdateProcessor(IRepositoryBase repositoryBase) : IMessageProcessor

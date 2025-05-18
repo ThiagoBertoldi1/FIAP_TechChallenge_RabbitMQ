@@ -1,4 +1,4 @@
-﻿using Queue.Delete.Interfaces;
+﻿using Queue.Domain.Interfaces;
 using RabbitMQ.Client;
 using RabbitMQ.Client.Events;
 using System.Text;
@@ -44,6 +44,6 @@ public class RabbitMQService(ILogger<RabbitMQService> logger) : IQueueService
             consumer,
             cancellationToken);
 
-        while (!cancellationToken.IsCancellationRequested) { await Task.Delay(1000, cancellationToken); }
+        while (!cancellationToken.IsCancellationRequested) { await Task.Delay(3000, cancellationToken); }
     }
 }

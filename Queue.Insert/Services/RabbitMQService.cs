@@ -1,4 +1,4 @@
-﻿using Queue.Insert.Interfaces;
+﻿using Queue.Domain.Interfaces;
 using RabbitMQ.Client;
 using RabbitMQ.Client.Events;
 using System.Text;

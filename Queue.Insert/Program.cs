@@ -1,5 +1,5 @@
+using Queue.Domain.Interfaces;
 using Queue.Insert;
-using Queue.Insert.Interfaces;
 using Queue.Insert.Services;
 using Queue.Repository.Interfaces;
 using Queue.Repository.Repositories;

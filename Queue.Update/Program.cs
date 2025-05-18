@@ -1,7 +1,7 @@
+using Queue.Domain.Interfaces;
 using Queue.Repository.Interfaces;
 using Queue.Repository.Repositories;
 using Queue.Update;
-using Queue.Update.Interfaces;
 using Queue.Update.Services;
 
 var builder = Host.CreateApplicationBuilder(args);

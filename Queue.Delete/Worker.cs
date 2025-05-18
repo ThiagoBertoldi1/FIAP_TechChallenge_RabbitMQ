@@ -1,4 +1,4 @@
-using Queue.Delete.Interfaces;
+using Queue.Domain.Interfaces;
 
 namespace Queue.Delete;
 

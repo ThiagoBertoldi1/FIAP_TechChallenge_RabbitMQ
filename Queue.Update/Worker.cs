@@ -1,4 +1,4 @@
-using Queue.Update.Interfaces;
+using Queue.Domain.Interfaces;
 
 namespace Queue.Update;
 

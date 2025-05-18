@@ -1,4 +1,4 @@
-using Queue.Insert.Interfaces;
+using Queue.Domain.Interfaces;
 
 namespace Queue.Insert;
 

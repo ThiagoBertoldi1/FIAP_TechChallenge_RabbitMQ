@@ -1,6 +1,6 @@
 ﻿using Newtonsoft.Json;
 using Queue.Domain.Entities;
-using Queue.Insert.Interfaces;
+using Queue.Domain.Interfaces;
 using Queue.Repository.Interfaces;
 
 namespace Queue.Insert.Services;

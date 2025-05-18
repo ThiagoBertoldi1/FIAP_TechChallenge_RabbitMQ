@@ -1,4 +1,4 @@
-﻿namespace Queue.Delete.Interfaces;
+﻿namespace Queue.Domain.Interfaces;
 
 public interface IMessageProcessor
 {

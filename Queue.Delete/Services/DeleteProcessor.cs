@@ -1,6 +1,6 @@
 ﻿using Newtonsoft.Json;
-using Queue.Delete.Interfaces;
 using Queue.Domain.Entities;
+using Queue.Domain.Interfaces;
 using Queue.Repository.Interfaces;
 
 namespace Queue.Delete.Services;
