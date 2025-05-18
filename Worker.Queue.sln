@@ -15,7 +15,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{02EA681E-C
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Queue.Domain", "Queue.Domain\Queue.Domain.csproj", "{FEC0C92E-9B5D-44DB-AEF5-D63778DA2E31}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Worker.Queue.Tests", "Worker.Queue.Tests\Worker.Queue.Tests.csproj", "{DA395A9E-96B6-496A-948C-87F6049CFAE9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Queue.Tests", "Worker.Queue.Tests\Queue.Tests.csproj", "{DA395A9E-96B6-496A-948C-87F6049CFAE9}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{3C92425D-7601-440E-B64C-98701C94F59F}"
 EndProject
