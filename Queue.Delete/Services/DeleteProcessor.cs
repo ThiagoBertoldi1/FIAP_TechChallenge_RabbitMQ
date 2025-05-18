@@ -17,7 +17,7 @@ public class DeleteProcessor(IRepositoryBase repository) : IMessageProcessor
             var result = await _repository.Delete<Contact>(idDelete, cancellationToken);
             if (!result)
             {
-                throw new InvalidOperationException("Não foi possível inserir o registro");
+                throw new InvalidOperationException("Não foi possível deletar o registro");
             }
         }
     }
