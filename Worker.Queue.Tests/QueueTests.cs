@@ -10,7 +10,7 @@ public class QueueTests
 
     public static IEnumerable<object[]> InsertContacts =>
         [
-            [new Contact { Name = "Pessoa1", Email = "pessoa1@gmail.com", PhoneNumber = 47991444009, District = "SC", Region = "Sul" }],
+            [new Contact { Name = "Pessoa4", Email = "pessoa1@gmail.com", PhoneNumber = 47991444009, District = "SC", Region = "Sul" }],
             [new Contact { Name = "Pessoa2", Email = "pessoa2@gmail.com", PhoneNumber = 47991666009, District = "AP", Region = "Sudeste" }],
             [new Contact { Name = "Pessoa3", Email = "pessoa3@gmail.com", PhoneNumber = 47321330009, District = "PO", Region = "Centro-Oeste" }]
         ];
