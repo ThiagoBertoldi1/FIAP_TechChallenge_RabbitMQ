@@ -1,0 +1,21 @@
+name: dockercompose7359112423326119668
+services:
+  queue.delete:
+    build:
+      context: C:\Users\User\source\repos\FIAP_TechChallenge_RabbitMQ
+      dockerfile: Queue.Delete/Dockerfile
+    environment:
+      DOTNET_ENVIRONMENT: Development
+    image: queuedelete
+    networks:
+      default: null
+    volumes:
+      - type: bind
+        source: C:\Users\User\AppData\Roaming/Microsoft/UserSecrets
+        target: /home/app/.microsoft/usersecrets
+        read_only: true
+        bind:
+          create_host_path: true
+networks:
+  default:
+    name: dockercompose7359112423326119668_default

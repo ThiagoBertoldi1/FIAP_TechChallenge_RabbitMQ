@@ -1,0 +1,16 @@
+{
+  "profiles": {
+    "Docker Compose": {
+      "commandName": "DockerCompose",
+      "environmentVariables": {
+        "DOTNET_ENVIRONMENT": "Development"
+      },
+      "commandVersion": "1.0",
+      "serviceActions": {
+        "worker-insert-1": "StartDebugging",
+        "worker-delete-1": "StartDebugging",
+        "worker-update-1": "StartDebugging"
+      }
+    }
+  }
+}

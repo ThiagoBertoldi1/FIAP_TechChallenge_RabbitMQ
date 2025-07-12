@@ -1,0 +1,36 @@
+name: dockercompose7359112423326119668
+services:
+  worker-delete:
+    build:
+      context: C:\Users\User\source\repos\FIAP_TechChallenge_RabbitMQ
+      dockerfile: Queue.Delete/Dockerfile
+    environment:
+      DOTNET_ENVIRONMENT: Development
+    image: worker-delete
+    networks:
+      rabbitmq-shared: null
+    restart: always
+  worker-insert:
+    build:
+      context: C:\Users\User\source\repos\FIAP_TechChallenge_RabbitMQ
+      dockerfile: Queue.Insert/Dockerfile
+    environment:
+      DOTNET_ENVIRONMENT: Development
+    image: worker-insert
+    networks:
+      rabbitmq-shared: null
+    restart: always
+  worker-update:
+    build:
+      context: C:\Users\User\source\repos\FIAP_TechChallenge_RabbitMQ
+      dockerfile: Queue.Update/Dockerfile
+    environment:
+      DOTNET_ENVIRONMENT: Development
+    image: worker-update
+    networks:
+      rabbitmq-shared: null
+    restart: always
+networks:
+  rabbitmq-shared:
+    name: rabbitmq-shared
+    external: true
