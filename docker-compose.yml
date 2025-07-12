@@ -1,37 +1,38 @@
 version: "3.9"
 services:
-  rabbitmq:
-    image: rabbitmq:3-management
-    ports:
-      - "5672:5672"     # Porta de mensagens
-      - "15672:15672"   # Porta da interface web de administração
-    environment:
-      RABBITMQ_DEFAULT_USER: guest
-      RABBITMQ_DEFAULT_PASS: guest
-
   worker-insert:
     build:
       context: .
       dockerfile: Queue.Insert/Dockerfile
+    environment:
+      - DOTNET_ENVIRONMENT=Development
     image: worker-insert
     restart: always
-    depends_on:
-      - rabbitmq
+    networks:
+      - external-network
 
   worker-update:
     build:
       context: .
       dockerfile: Queue.Update/Dockerfile
+    environment:
+      - DOTNET_ENVIRONMENT=Development
     image: worker-update
     restart: always
-    depends_on:
-      - rabbitmq
+    networks:
+      - external-network
 
   worker-delete:
     build:
       context: .
       dockerfile: Queue.Delete/Dockerfile
+    environment:
+      - DOTNET_ENVIRONMENT=Development
     image: worker-delete
     restart: always
-    depends_on:
-      - rabbitmq
+    networks:
+      - external-network
+
+networks:
+  external-network:
+    external: true
