@@ -6,7 +6,7 @@ using Queue.Repository.Interfaces;
 namespace Queue.Repository.Repositories;
 public class RepositoryBase(IConfiguration config) : IRepositoryBase
 {
-    private readonly string _connString = config["ConnectionStrings:ConnString"]!;
+    private readonly string _connString = config["CONNECTION_STRING"]!;
 
     public async Task<bool> Insert<T>(T entity, CancellationToken cancellationToken)
     {
